@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class solution {
     static StringBuilder sb = new StringBuilder();
 
     static void input() {
