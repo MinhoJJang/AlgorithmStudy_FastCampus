@@ -14,23 +14,23 @@ public class Main {
 
     static int N, S, ans;
     static int[] nums;
-    // k¹øÂ° ¿ø¼Ò¸¦ Æ÷ÇÔ½ÃÅ³ Áö Á¤ÇÏ´Â ÇÔ¼ö
-    // value:= k-1 ¹øÂ° ¿ø¼Ò±îÁö °ñ¶óÁø ¿ø¼ÒµéÀÇ ÇÕ
+    // kë²ˆì§¸ ì›ì†Œë¥¼ í¬í•¨ì‹œí‚¬ ì§€ ì •í•˜ëŠ” í•¨ìˆ˜
+    // value:= k-1 ë²ˆì§¸ ì›ì†Œê¹Œì§€ ê³¨ë¼ì§„ ì›ì†Œë“¤ì˜ í•©
     static void rec_func(int k, int value) {
-        if (k == N + 1) {  // ºÎºÐ ¼ö¿­À» ÇÏ³ª ¿Ï¼º ½ÃÅ² »óÅÂ
-            // value °¡ S ¶û °°Àº Áö È®ÀÎÇÏ±â
+        if (k == N + 1) {  // ë¶€ë¶„ ìˆ˜ì—´ì„ í•˜ë‚˜ ì™„ì„± ì‹œí‚¨ ìƒíƒœ
+            // value ê°€ S ëž‘ ê°™ì€ ì§€ í™•ì¸í•˜ê¸°
 	    // TODO
         } else {
-            // k ¹øÂ° ¿ø¼Ò¸¦ Æ÷ÇÔ½ÃÅ³ Áö °áÁ¤ÇÏ°í Àç±ÍÈ£ÃâÇØÁÖ±â
+            // k ë²ˆì§¸ ì›ì†Œë¥¼ í¬í•¨ì‹œí‚¬ ì§€ ê²°ì •í•˜ê³  ìž¬ê·€í˜¸ì¶œí•´ì£¼ê¸°
 	    // TODO
         }
     }
 
     public static void main(String[] args) {
         input();
-        // 1 ¹øÂ° ¿ø¼ÒºÎÅÍ M ¹øÂ° ¿ø¼Ò¸¦ Á¶°Ç¿¡ ¸Â°Ô °í¸£´Â ¸ðµç ¹æ¹ýÀ» Å½»öÇØÁà
+        // 1 ë²ˆì§¸ ì›ì†Œë¶€í„° M ë²ˆì§¸ ì›ì†Œë¥¼ ì¡°ê±´ì— ë§žê²Œ ê³ ë¥´ëŠ” ëª¨ë“  ë°©ë²•ì„ íƒìƒ‰í•´ì¤˜
         rec_func(1, 0);
-        // ans °¡ Á¤¸» "Áø ºÎºÐÁýÇÕ"¸¸ ´Ù·ç´Â Áö È®ÀÎÇÏ±â
+        // ans ê°€ ì •ë§ "ì§„ ë¶€ë¶„ì§‘í•©"ë§Œ ë‹¤ë£¨ëŠ” ì§€ í™•ì¸í•˜ê¸°
 	// TODO
         System.out.println(ans);
     }
